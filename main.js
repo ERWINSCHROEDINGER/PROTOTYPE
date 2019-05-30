@@ -1,3 +1,7 @@
+void setup() {
+  size(400, 400);
+}
+
 var KEYS = [];
 var DECAY = 1;
 var DECAYR = 1;

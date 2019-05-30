@@ -14,6 +14,7 @@
  <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
  
  <script>
+	var sketchProc = function(processingInstance) {
 	var KEYS = [];
 	var DECAY = 1;
 	var DECAYR = 1;
@@ -267,7 +268,7 @@
 
 	    ROTATE = atan2(mouseY - COORDINATES[1], mouseX - 
 	    COORDINATES[0]);
-	};
+	}};
 
     // Get the canvas that Processing-js will use
     var canvas = document.getElementById("mycanvas"); 

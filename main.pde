@@ -1,7 +1,6 @@
 // Global variables
 int x, y;
 int rotate, rrotate;
-int players;
 int[] coords = new int[2];
 
 // Setup the Processing Canvas
@@ -14,13 +13,13 @@ void setup() {
   coords[0] = 300;
   coords[1] = 300;
   rotate = 0;
-  rrotate = 0;
 }
 
 // Functions
 
-
+// Inits the Players location and rocation calculation
 void player() {
+  this.rotate = rotate;
   this.x = coords[0];
   this.y = coords[1];
 }
@@ -82,7 +81,7 @@ void draw() {
   update(); 
   display();
   edges();
-
+  
 }
 
 
